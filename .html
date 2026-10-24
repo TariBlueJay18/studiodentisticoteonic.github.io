@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Studio Dentistico P.A. Prato Sud · Dentista per tutte le età</title>
+<meta name="description" content="Studio dentistico all’interno della Pubblica Assistenza Prato Sud, in Piazza della Vittoria a Prato. Prevenzione, igiene, ortodonzia, impianti, protesi e cure per bambini.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#eef7f5; --surface:#ffffff; --ink:#12324a; --muted:#4b6578;
+  --blue:#2a7ab0; --teal:#3b9aa5; --green:#5fb98a; --yellow:#f3c13a; --red:#e2564a;
+  --line:#cfe3df; --btn:#12324a; --btn-ink:#ffffff;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0e2230; --surface:#153147; --ink:#eaf4f6; --muted:#a9c3cf; --line:#244559;
+    --blue:#6bb4e6; --teal:#6cc3cc; --green:#79d0a0; --btn:#f3c13a; --btn-ink:#12324a;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0e2230; --surface:#153147; --ink:#eaf4f6; --muted:#a9c3cf; --line:#244559;
+  --blue:#6bb4e6; --teal:#6cc3cc; --green:#79d0a0; --btn:#f3c13a; --btn-ink:#12324a;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Nunito",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:18px;line-height:1.6}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:3px;border-radius:4px}
+.wrap{max-width:960px;margin:0 auto;padding:0 22px}
+.stripe{height:8px;background:linear-gradient(90deg,var(--blue) 0 25%,var(--green) 25% 50%,var(--yellow) 50% 75%,var(--red) 75%)}
+header.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:900;line-height:1.1}
+.brand small{display:block;font-weight:600;color:var(--green);font-size:.8rem}
+.brand svg{width:44px;height:44px;flex:none}
+.call-sm{font-weight:800;text-decoration:none;padding:10px 18px;border-radius:999px;background:var(--btn);color:var(--btn-ink);white-space:nowrap}
+.hero{padding:44px 0 56px}
+.hero p.lead{margin:0 0 6px;font-size:clamp(1.1rem,3.2vw,1.5rem);font-weight:800;color:var(--blue)}
+.hero h1{margin:0;font-size:clamp(2.3rem,8vw,4.6rem);line-height:1.02;font-weight:900;letter-spacing:-.02em;color:var(--green)}
+.hero .sub{max-width:34em;margin:22px 0 28px;color:var(--muted);font-size:1.15rem}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;font-weight:800;text-decoration:none;padding:15px 26px;border-radius:999px;background:var(--btn);color:var(--btn-ink);font-size:1.05rem}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+section{padding:52px 0;border-top:2px solid var(--line)}
+h2{margin:0 0 8px;font-size:clamp(1.7rem,5vw,2.4rem);line-height:1.15;font-weight:900}
+.intro{margin:0 0 30px;color:var(--muted);max-width:36em}
+.servizi{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0 40px}
+.servizi li{display:flex;gap:16px;padding:20px 0;border-bottom:1px solid var(--line)}
+.dot{flex:none;width:14px;height:14px;border-radius:50%;margin-top:9px}
+.servizi h3{margin:0 0 4px;font-size:1.25rem;font-weight:800}
+.servizi p{margin:0;color:var(--muted);font-size:1rem}
+.dove{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:36px;align-items:start}
+.dove address{font-style:normal;font-size:1.25rem;font-weight:700;line-height:1.5}
+.dove p{margin:0 0 14px}
+.muted{color:var(--muted)}
+.contatti{background:var(--surface);border-radius:28px;padding:40px 28px;text-align:center;border:2px solid var(--line)}
+.contatti h2{margin-bottom:6px}
+.tel{display:inline-block;margin:14px 0 8px;font-size:clamp(2.2rem,9vw,4rem);font-weight:900;letter-spacing:-.01em;text-decoration:none;color:var(--ink)}
+.tel:hover{color:var(--blue)}
+footer{padding:30px 0 40px;color:var(--muted);font-size:.95rem;text-align:center}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="stripe"></div>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="#">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 8c-4-4-14-3-15 6-1 8 4 10 5 18 .5 4 3 8 5.5 8 3 0 2.5-8 4.5-8s1.5 8 4.5 8c2.5 0 5-4 5.500-8 1-8 6-10 5-18C38 5 28 4 24 8z" fill="none" stroke="#2a7ab0" stroke-width="3" stroke-linejoin="round"/><path d="M18 21q6 6 12 0" fill="none" stroke="#5fb98a" stroke-width="3" stroke-linecap="round"/></svg>
+      <span>P.A. Prato Sud<small>Studio dentistico</small></span>
+    </a>
+    <a class="call-sm" href="tel:+393935864776">Chiama</a>
+  </header>
+
+  <main>
+    <div class="hero">
+      <p class="lead">Il tuo sorriso, la nostra priorità</p>
+      <h1>Dentista per tutte le età</h1>
+      <p class="sub">Cure per adulti, ragazzi e bambini in un ambiente semplice e accogliente, all’interno della Pubblica Assistenza Prato Sud.</p>
+      <div class="btns">
+        <a class="btn" href="tel:+393935864776">Prenota una visita</a>
+        <a class="btn alt" href="#servizi">Scopri i servizi</a>
+      </div>
+    </div>
+
+    <section id="servizi">
+      <h2>I nostri servizi</h2>
+      <p class="intro">Dalla prevenzione alle cure più complete, per tutta la famiglia.</p>
+      <ul class="servizi">
+        <li><span class="dot" style="background:var(--yellow)"></span><div><h3>Prevenzione e igiene</h3><p>Visite di controllo e pulizia professionale per mantenere i denti sani nel tempo.</p></div></li>
+        <li><span class="dot" style="background:var(--teal)"></span><div><h3>Ortodonzia</h3><p>Percorsi per allineare i denti, per ragazzi e per adulti.</p></div></li>
+        <li><span class="dot" style="background:var(--red)"></span><div><h3>Impianti e protesi</h3><p>Soluzioni per sostituire i denti mancanti e tornare a masticare e sorridere con sicurezza.</p></div></li>
+        <li><span class="dot" style="background:var(--green)"></span><div><h3>Bambini</h3><p>Un approccio attento e rassicurante per i più piccoli, fin dalle prime visite.</p></div></li>
+      </ul>
+    </section>
+
+    <section id="dove">
+      <div class="dove">
+        <div>
+          <h2>Dove siamo</h2>
+          <address>Pubblica Assistenza Prato Sud<br>Piazza della Vittoria<br>Prato</address>
+          <p style="margin-top:18px"><a class="btn alt" href="https://www.google.com/maps/search/?api=1&amp;query=Pubblica+Assistenza+Prato+Sud+Piazza+della+Vittoria+Prato" target="_blank" rel="noopener">Apri su Google Maps</a></p>
+        </div>
+        <div>
+          <h2>Come funziona</h2>
+          <p class="muted">Chiama o lascia un messaggio al numero qui sotto: verrai ricontattato per fissare l’appuntamento.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contatti">
+      <div class="contatti">
+        <h2>Info e appuntamenti</h2>
+        <a class="tel" href="tel:+393935864776">393 586 4776</a>
+        <p class="muted" style="margin:0">Chiama o lascia un messaggio e verrai ricontattato.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>© Studio dentistico P.A. Prato Sud · Piazza della Vittoria, Prato</footer>
+</div>
+<div class="stripe"></div>
+</body>
+</html>
